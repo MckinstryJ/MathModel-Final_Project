@@ -1,4 +1,4 @@
-# MathModel-Final_Project
+# Mathematical Modeling - Final Project
 
 As a final project in my Mathematical Modeling class, I've build a C++ program to simulate how long it will take for a solution to be fully mixed into another solution given a set tempeture. <br /> <br />
 
