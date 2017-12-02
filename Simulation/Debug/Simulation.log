@@ -1,21 +1,8 @@
-﻿  Simulation.cpp
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(80): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(102): warning C4244: 'return': conversion from '__int64' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(106): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(107): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(108): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(109): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(110): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(111): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(112): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(113): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(117): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(118): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(119): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(120): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(121): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(122): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(123): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\simulation.cpp(124): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+﻿  bSim.cpp
+c:\users\john\desktop\c++\simulation\simulation\bsim.cpp(58): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\bsim.cpp(62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\bsim.cpp(66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Simulation.cpp
+  Generating Code...
   Simulation.vcxproj -> C:\Users\John\Desktop\C++\Simulation\Debug\Simulation.exe
   Simulation.vcxproj -> C:\Users\John\Desktop\C++\Simulation\Debug\Simulation.pdb (Partial PDB)
