@@ -1,12 +1,15 @@
 # Mathematical Modeling - Final Project
 
-As a final project in my Mathematical Modeling class, I've build a C++ program to simulate how long it will take for a solution to be fully mixed into another solution given a set tempeture. <br /> <br />
+As a final project in my Mathematical Modeling class, I've build a C++ program to simulate how long it will take for a solution to be fully mixed into another solution given a set tempeture and set viscosity (added cornstarch). <br /> <br />
 
-Version 1.0 tracked the time it would take if every downward (to side) direction had an equal distribution. This is not very realistic, but it sets the base for version 2.0. <br /><br />
+Base simulation - tracked the time it would take the ink to reach the bottom of the cube with a set of direction specific transfer rates. <br /> <br />
 
-Version 2.0 (after actual data has been gathered) tracked the time it would take for the 2nd solution to be fully mixed into the 1st while following a behavior that closely matches version 1.0 ...and... that matched the data gathered. <br /><br />
+Navier-Stokes Inspired simulation - tracked the same thing with a few additional backward direction specific transfer rates.
 
-Version 3.0 (final version) does the same thing as version 1.0 and 2.0 but this time it's behavior matched what I could find through research. Dropping a drop of ink into water does a good job summarizing the behavior of verison 3.0. <br />(HERES A LINK TO SOMEONE DOING IT - https://youtu.be/Peg1yaB2bsk) <br /><br />
+Results <br />
+<ul>
+  <li>The base simulation was the only simulation that was able to work given the simple sequencial approach and with unrealible data, the simulation was only adjusted to fit the ink to plain water.
+</ul>
 
 Contributors <br />
 <ul>
@@ -17,6 +20,7 @@ Contributors <br />
           <li>Helped populate the LateX document</li>
           <li>Helped gather acutal data</li>
           <li>Helped with general research</li>
+          <li>Set up PPT and filled in info on simulation slides</li>
         </ul>
   <li> Heather & Brittney - 
       <ul>
