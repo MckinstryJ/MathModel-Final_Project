@@ -13,7 +13,7 @@ void next_to_direct_below(int x, int y, int z, float dot, float sideDown);
 void side(int x, int y, int z, float dot, float side);
 
 /*
-INIT CUBE - with starting values
+	INIT CUBE - with starting values
 */
 void fillCube(float topMidValue) {
 	for (int x = 0; x < X_DIM - 1; x++) {
@@ -27,19 +27,19 @@ void fillCube(float topMidValue) {
 }
 
 /*
-BASE SIMULATION - measuring the time it takes for the mixing solution to full spread.
+	BASE SIMULATION - measuring the time it takes for the mixing solution to full spread.
 
-@param temp    the tempeture of the fuild to determine the transfer delay
-@param thickness    the thickiness of the fuild (with an increase in corn starch.
+	@param temp    the tempeture of the fuild to determine the transfer delay
+	@param thickness    the thickiness of the fuild (with an increase in corn starch).
 */
 chrono::seconds base_Simulation(float temp, float thickness) {
 	/*
-	How fast the color spreads will be determined by the experiment(s).
+		How fast the color spreads will be determined by the experiment(s).
 
-	The transfer speed will increase/decrease based on a weighted amount of the given tempeture/thickiness.
+		The transfer speed will increase/decrease based on a weighted amount of the given tempeture/thickiness.
 	*/
-	double weight_temp = .007;
-	double weight_thick = .001;
+	double weight_temp = .0001;
+	double weight_thick = .01;
 	double directDown = .05 + (temp*weight_temp) - (thickness*weight_thick);
 	double sideDown = .025 + (temp*weight_temp) - (thickness*weight_thick);
 	double sideUnit = .0125 + (temp*weight_temp) - (thickness*weight_thick);
@@ -53,23 +53,27 @@ chrono::seconds base_Simulation(float temp, float thickness) {
 					float dot = cube[x][y][z];
 					if (dot > 0) {
 						/*
-						Unit directly below current unit
+							Unit directly below current unit
 						*/
 						cube[x][y][z + 1] += dot*directDown;
 						/*
-						Unit next to direct-below unit
+							Unit next to direct-below unit
 						*/
 						next_to_direct_below(x, y, z, dot, sideDown);
 						/*
-						Unit to the side of current unit.
+							Unit to the side of current unit.
 						*/
 						side(x, y, z, dot, sideUnit);
+						/*
+							Remove transfer from original
+						*/
+						cube[x][y][z] -= dot*directDown + dot*sideDown * 8 + dot*sideUnit * 8;
 					}
 				}
 			}
 		}
-		if (cube[(X_DIM / 2) - 1][(Y_DIM / 2) - 1][Z_DIM - 1] && cube[0][Y_DIM - 1][Z_DIM - 1]
-			&& cube[X_DIM - 1][Y_DIM - 1][Z_DIM - 1] && cube[X_DIM - 1][0][Z_DIM - 1] && cube[0][0][Z_DIM - 1]) {
+		if (cube[(X_DIM / 2) - 1][(Y_DIM / 2) - 1][Z_DIM - 1] > 0 || cube[0][Y_DIM - 1][Z_DIM - 1] > 0
+			|| cube[X_DIM - 1][Y_DIM - 1][Z_DIM - 1] > 0 || cube[X_DIM - 1][0][Z_DIM - 1] > 0 || cube[0][0][Z_DIM - 1] > 0) {
 			notFullyMixed = false;
 		}
 	}
@@ -79,7 +83,7 @@ chrono::seconds base_Simulation(float temp, float thickness) {
 }
 
 /*
-For units that are next to the unit directly below
+	For units that are next to the unit directly below
 */
 void next_to_direct_below(int x, int y, int z, float dot, float sideDown) {
 	cube[x + 1][y + 1][z + 1] += dot*sideDown;

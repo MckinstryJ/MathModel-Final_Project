@@ -1,8 +1,9 @@
-﻿  bSim.cpp
-c:\users\john\desktop\c++\simulation\simulation\bsim.cpp(58): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\bsim.cpp(62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\john\desktop\c++\simulation\simulation\bsim.cpp(66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Simulation.cpp
-  Generating Code...
+﻿  navier_stokes.cpp
+c:\users\john\desktop\c++\simulation\simulation\navier_stokes.cpp(53): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\navier_stokes.cpp(57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\navier_stokes.cpp(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\navier_stokes.cpp(65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\navier_stokes.cpp(69): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\john\desktop\c++\simulation\simulation\navier_stokes.cpp(73): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
   Simulation.vcxproj -> C:\Users\John\Desktop\C++\Simulation\Debug\Simulation.exe
   Simulation.vcxproj -> C:\Users\John\Desktop\C++\Simulation\Debug\Simulation.pdb (Partial PDB)
